@@ -1,0 +1,491 @@
+// .Main .reviews, работа с секцией новостей*****
+
+@mixin Template-Flex($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.main {
+    .reviews {
+        padding-top: 60px;
+        height: 800px;
+
+        .reviews__caption {
+            margin: 0 auto;
+
+            max-width: 400px;
+            height: 100px;
+
+            border-bottom: solid black 3px;
+
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .list {
+            @include Template-Flex(space-between, end);
+
+            margin: 60px auto;
+            max-width: 1200px;
+            min-height: 500px;
+
+            .list__people {
+                @include Template-Flex(center, start);
+
+                width: 400px;
+                height: 450px;
+
+                background-color: #E1291E;
+                border-radius: 10px;
+            }
+
+            .man-1 {
+                @include Template-Flex(center, center);
+
+                .man-1__content {
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    width: 370px;
+
+
+
+                    .man-1__text {
+                        width: 170px;
+                    }
+
+                    .man-1__flex {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        width: 200px;
+                        height: 340px;
+
+                        .man-1__img {
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
+                            background: url(../img/фото/левый_клиент.png) 50% 0/cover no-repeat;
+                        }
+                    }
+                }
+            }
+
+            .man-2 {
+                @include Template-Flex(center, center);
+                width: 330px;
+                height: 360px;
+
+                .man-2__content {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .man-2__img {
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        background: url(../img/фото/средний_клиент.png) 40% 0/cover no-repeat
+                    }
+
+                    .man-2__text {
+                        width: 320px;
+                    }
+                }
+            }
+
+            .man-3 {
+                @include Template-Flex(center, center);
+
+                .man-3__content {
+
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    width: 370px;
+
+                    .man-3__flex {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        width: 200px;
+                        height: 340px;
+
+                        .man-3__img {
+                            width: 200px;
+                            height: 200px;
+                            border-radius: 50%;
+                            background: url(../img/фото/правый_клиент.png) 50% 50%;
+                        }
+                    }
+
+                    .man-3__text {
+                        width: 170px;
+                    }
+                }
+            }
+
+            .list__text {
+                font-family: 'Open Sans';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                color: white;
+            }
+
+            .list__name {
+                font-family: 'Open Sans';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 32px;
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 1260px) {
+    .main {
+        .reviews {
+            .list {
+                max-width: 1100px;
+                min-height: 500px;
+
+                .list__people {
+                    width: 350px;
+                    height: 430px;
+                }
+
+                .man-1 {
+                    .man-1__content {
+                        width: 370px;
+
+
+
+                        .man-1__text {
+                            width: 170px;
+                        }
+
+                        .man-1__flex {
+                            width: 180px;
+                            height: 300px;
+
+                            .man-1__img {
+                                width: 170px;
+                                height: 170px;
+                                border-radius: 50%;
+                                background: url(../img/фото/левый_клиент.png) 50% 50%;
+                            }
+                        }
+                    }
+                }
+
+                .man-2 {
+                    width: 330px;
+                    height: 360px;
+
+                    .man-2__content {
+                        .man-2__img {
+                            width: 180px;
+                            height: 180px;
+                        }
+
+                        .man-2__text {
+                            width: 320px;
+                        }
+                    }
+                }
+
+                .man-3 {
+                    .man-3__content {
+                        display: flex;
+                        justify-content: space-between;
+
+                        width: 370px;
+
+                        .man-3__flex {
+                            width: 180px;
+                            height: 300px;
+
+                            .man-3__img {
+                                align-self: end;
+                                width: 170px;
+                                height: 170px;
+                            }
+                        }
+
+                        .man-3__text {
+                            width: 165px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1160px) {
+    .main {
+        .reviews {
+            .list {
+                display: grid;
+                grid-template-areas:
+                    'first third'
+                    'second second';
+
+                width: 900px;
+
+                .man-1 {
+                    grid-area: first;
+
+                    width: 420px;
+                    height: 250px;
+
+                    .man-1__content {
+
+                        display: grid;
+                        grid-template-areas:
+                            'left right';
+                        justify-items: center;
+                        align-items: center;
+
+                        .man-1__text {
+                            grid-area: right;
+                            width: 196px;
+                            font-size: 14px;
+                        }
+
+                        .man-1__flex {
+                            grid-area: left;
+                            width: 150px;
+                            height: 200px;
+
+                            .man-1__img {
+                                width: 150px;
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+
+                .man-2 {
+                    grid-area: second;
+                    width: 80%;
+                    height: 180px;
+                    margin: 0 auto;
+
+                    .man-2__content {
+                        display: grid;
+                        grid-template-areas:
+                            'img text'
+                            'name text';
+
+                        justify-items: center;
+                        align-items: center;
+
+                        .man-2__img {
+                            grid-area: img;
+                            width: 120px;
+                            height: 120px;
+                        }
+
+                        .man-2__text {
+                            grid-area: text;
+                            width: 500px;
+                            font-size: 17px;
+                        }
+                    }
+                }
+
+                .man-3 {
+                    grid-area: third;
+                    width: 420px;
+                    height: 250px;
+
+                    .man-3__content {
+
+                        display: grid;
+                        grid-template-areas:
+                            'left right';
+
+                        justify-items: center;
+                        align-items: center;
+
+                        .man-3__text {
+                            grid-area: right;
+                            width: 200px;
+                            font-size: 16px;
+                        }
+
+                        .man-3__flex {
+                            grid-area: left;
+                            width: 150px;
+                            height: 200px;
+
+                            .man-3__img {
+                                width: 150px;
+                                height: 150px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .main {
+        .reviews {
+            margin: 0 auto;
+
+            .list {
+                display: block;
+                width: 100%;
+        
+                .man-1 {
+                    display: none;
+                }
+
+                .man-3 {
+                    display: none;
+                }
+
+                .man-2 {
+                    display: block;
+                    margin-top: 60px;
+                    min-height: 530px;
+                    max-width: 700px;
+
+
+                    .man-2__content {
+
+                        display: block;
+                        margin: 0 auto;
+                        padding: 30px 0 30px 0;
+
+                        .man-2__img {
+
+                            display: block;
+                            margin: 0 auto;
+
+
+                            width: 200px;
+                            height: 200px;
+                        }
+
+                        .man-2__name {
+                            padding-top: 10px;
+                        }
+
+                        .man-2__text {
+                            display: block;
+                            margin: 0 auto;
+                            padding-top: 10px;
+                            width: auto;
+                            height: auto;
+                        }
+
+
+                    }
+
+                    .man-2__content:after {
+                        content: '';
+
+                        display: block;
+                        margin: 40px auto 0 auto;
+
+
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        background: url(../img/иконки/далее.svg) no-repeat;
+                    }
+
+
+                }
+
+
+
+            }
+
+
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main {
+        .reviews {
+            .reviews__caption {
+                font-size: 24px;
+                max-width: 200px;
+                height: 70px;
+            }
+
+            .list {
+                .man-2 {
+                    .man-2__content {
+                        .man-2__img {
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        // .man-2__name {}
+
+                        // .man-2__text {}
+                    }
+
+                    .man-2__content:after {
+
+                        margin: 30px auto 0 auto;
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:460px) {
+    .main {
+        .reviews {
+            .reviews__caption {
+                font-size: 18px;
+                height: 60px;
+            }
+
+
+            .list {
+                .man-2 {
+                    .man-2__content:after {
+
+                        margin: 10px auto 0 auto;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .Main .reviews, работа с секцией новостей****

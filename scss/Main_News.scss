@@ -1,0 +1,256 @@
+// .Main .News, работа с секцией новостей*****
+
+@mixin Template-Flex($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.main {
+    .news {
+        padding-top: 60px;
+
+        background: #C4C4C4;
+
+        .news__container {
+            min-height: 700px;
+
+            .news__caption {
+                margin: 0 auto;
+
+                max-width: 400px;
+                height: 100px;
+
+                border-bottom: solid black 3px;
+
+                font-family: 'Roboto';
+                font-weight: 700;
+                font-size: 36px;
+                text-align: center;
+            }
+
+            .news__contant {
+                margin: 60px auto;
+                display: grid;
+                max-width: 1200px;
+                height: 400px;
+                grid-template-columns: 500px 500px;
+                grid-template-rows: 170px 170px;
+                justify-content: space-between;
+                align-content: space-between;
+
+                .news__new {
+                    background: white;
+                    border-radius: 5px;
+
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+
+                    .new__top {
+                        @include Template-Flex(start, center);
+                        margin-top: 5px;
+                        margin-right: 5px;
+                        margin-bottom: 8px;
+                    }
+
+                    .news__text {
+                        @include Template-Flex(center, center);
+                        text-align: center;
+                        width: 275px;
+                        height: 105px;
+                    }
+
+                    .news__img {
+                        margin-left: 2px;
+
+                        width: 220px;
+                        height: 105px;
+                        border-radius: 5px;
+                    }
+
+                    .new-1-1__img {
+                        background: url(../img/фото/инф_1_1.png)50% 50%/cover no-repeat;
+                    }
+
+                    .new-1-2__img {
+                        background: url(../img/фото/инф_1_2.png)60% 40%/cover no-repeat;
+                    }
+
+                    .new-2-1__img {
+                        background: url(../img/фото/инф_2_1.png)50% 50%/cover no-repeat;
+                    }
+
+                    .new-2-2__img {
+                        background: url(../img/фото/инф_2_2.png)100% 50%/cover no-repeat;
+                    }
+
+                    .news__button {
+                        @include Template-Flex(center, center);
+                        margin: 0 auto;
+
+                        width: 350px;
+                        height: 40px;
+                        border-radius: 5px;
+
+                        color: white;
+                        background-color: #68705D;
+                        transition-duration: 0.3s;
+                    }
+
+                    .news__button:hover {
+                        background-color: rgba(193, 21, 16, 0.92);
+                        transform: scale(0.95);
+                        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                    }
+
+                    .news__button:active {
+                        opacity: 0.6;
+                        transform: scale(0.9);
+                        transition-duration: 0s;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1260px) {
+    .main {
+        .news {
+            .news__container {
+                .news__contant {
+                    max-width: 1100px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .main {
+        .news {
+            .news__container {
+                .news__contant {
+                    max-width: 900px;
+
+                    grid-template-columns: 400px 400px;
+                    grid-template-rows: 170px 170px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .main {
+        .news {
+            .news__container {
+                .news__contant {
+                    max-width: 700px;
+                    grid-column-gap: 80px;
+
+                    grid-template-columns: 300px 300px;
+                    grid-template-rows: 160px 160px;
+
+                    .news__new {
+                        .news__text {
+                            font-size: 18px;
+                        }
+
+                        .news__button {
+                            width: 250px;
+                            height: 32px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main {
+        .news {
+            .news__container {
+
+                .news__caption {
+                    font-size: 24px;
+                    max-width: 200px;
+                    height: 70px;
+                }
+
+                .news__contant {
+                    margin: 30px auto;
+                    max-width: 600px;
+                    height: 800px;
+
+                    @include Template-Flex(space-evenly, center);
+                    flex-direction: column;
+
+                    .news__new {
+                        height: 150px;
+                        width: 80%;
+
+                        .news__text {
+                            width: 240px;
+                            height: 90px;
+                        }
+
+                        .news__img {
+                            width: 220/300*100%;
+                            height: 90px;
+                        }
+
+                        .news__button {
+                            width: 300/422*100%;
+                            height: 38px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .main {
+        .news {
+            .news__container {
+                .news__contant {
+                    .news__new {
+                        .news__text {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .main {
+        .news {
+            .news__container {
+                .news__caption {
+                    font-size: 18px;
+                    height: 60px;
+                }
+
+                .news__contant {
+                    .news__new {
+                        .news__text {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// .Main .News, работа с секцией новостей*****

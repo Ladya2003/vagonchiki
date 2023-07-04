@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,EAAC,IAAI,CAAA;EACL,MAAM,EAAE,IAAI;CACf;;AAED,AAAA,IAAI,CAAC;EACD,WAAW,EAAE,MAAM;EACnB,SAAS,EAAE,IAAI;CAClB;;AAED,AAAA,IAAI,CAAC;EACD,IAAI,EAAE,QAAQ;CACjB;;AAED,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,UAAU,EAAE,IAAI;EAChB,MAAM,EAAC,MAAM;EACb,QAAQ,EAAE,MAAM;CACnB",
+    "sources": [
+        "../Курсовой проект/scss/Main_page.scss"
+    ],
+    "names": [],
+    "file": "Main_page.css"
+}

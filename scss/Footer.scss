@@ -1,0 +1,272 @@
+.footer {
+    position: relative;
+    background-color: rgba(0, 0, 0, 85);
+    min-height: 260px;
+
+    .footer__top {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        max-width: 1200px;
+        margin: 0 auto 0 auto;
+        padding-top: 40px;
+
+        .left {
+            width: 230px;
+
+            .left__caption {
+                border-bottom: 3px solid red;
+                padding-bottom: 8px;
+                text-align: center;
+            }
+
+            .left__text {
+                margin-top: 8px;
+                text-align: center;
+            }
+        }
+
+        .middle {
+            width: 230px;
+
+            .middle__caption {
+                border-bottom: 3px solid red;
+                padding-bottom: 8px;
+                text-align: center;
+            }
+
+            .middle__text {
+                display: flex;
+                margin-top: 8px;
+                justify-content: space-evenly;
+            }
+        }
+
+        .right {
+            width: 230px;
+
+            .right__caption {
+                border-bottom: 3px solid red;
+                padding-bottom: 8px;
+                text-align: center;
+            }
+
+            .right__text {
+                padding-top: 8px;
+                text-align: center;
+            }
+        }
+    }
+
+    .footer__bottom {
+        position: absolute;
+        color: white;
+        text-align: center;
+        width: 100%;
+        bottom: 5%;
+    }
+
+}
+
+@media (max-width: 1260px) {
+    .footer {
+        .footer__top {
+            max-width: 1100px;
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .footer {
+        .footer__top {
+            max-width: 900px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .footer {
+        .footer__top {
+            margin-bottom: 20%;
+            height: 400px;
+            max-width: 700px;
+            width: 80%;
+            flex-direction: column;
+            align-items: center;
+
+            .left {
+                width: 100%;
+                font-size: 30px;
+            }
+
+            .middle {
+                width: 100%;
+                font-size: 30px;
+            }
+
+            .right {
+                width: 100%;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        .footer__top {
+            .left {
+                .left__caption {
+                    font-size: 25px;
+                }
+
+                .left__text {
+                    font-size: 25px;
+                }
+
+            }
+
+            .middle {
+                .middle__caption {
+                    font-size: 25px;
+                }
+
+            }
+
+            .right {
+                .right__caption {
+                    font-size: 25px;
+                }
+
+                .right__text {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:640px) {
+    .footer {
+        height: 450px;
+
+        .footer__top {
+            height: 350px;
+
+            .left {
+                .left__caption {
+                    font-size: 20px;
+                }
+
+                .left__text {
+                    font-size: 20px;
+                }
+
+            }
+
+            .middle {
+                .middle__caption {
+                    font-size: 20px;
+                }
+
+            }
+
+            .right {
+                .right__caption {
+                    font-size: 20px;
+                }
+
+                .right__text {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:460px) {
+    .footer {
+        height: 350px;
+        .footer__top {
+            height: 260px;
+
+            .left {
+                .left__caption {
+                    font-size: 15px;
+                }
+
+                .left__text {
+                    font-size: 15px;
+                }
+
+            }
+
+            .middle {
+                .middle__caption {
+                    font-size: 15px;
+                }
+
+            }
+
+            .right {
+                .right__caption {
+                    font-size: 15px;
+                }
+
+                .right__text {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .footer__bottom {font-size:14px;}
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media (max-width: 960px) {
+//     .footer {
+//         .footer__container {
+//             height: 400px;
+//             .footer__top {
+//                 height: 350px;
+//                 flex-direction: column;
+//                 align-items: center;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 460px){
+//     .footer{
+//         font-size: 12px;
+//     }
+// }

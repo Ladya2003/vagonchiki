@@ -1,0 +1,761 @@
+@charset "UTF-8";
+.main .MenuTicket {
+  width: 100%;
+  height: 760px;
+  margin: 0 auto;
+  background: url("../img/фото/Поезд на заднем фоне.png") 25% 50%/cover no-repeat;
+}
+
+.main .MenuTicket .MenuTicket__container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 120px;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 500;
+  color: white;
+  -webkit-text-stroke: 1px #9D1619;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 32%;
+  height: 90px;
+  border-radius: 38px;
+  background: rgba(193, 21, 16, 0.92);
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide input {
+  display: none;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 40px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  font-family: 'Roboto';
+  font-size: 19px;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 0px 4px 0px #000000 inset;
+          box-shadow: 0px 0px 4px 0px #000000 inset;
+  cursor: pointer;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__button:hover {
+  padding: 20px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first {
+  position: relative;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first .list_1 {
+  -webkit-transition: margin-left 1s;
+  transition: margin-left 1s;
+  position: absolute;
+  width: 100%;
+  min-height: 0;
+  bottom: 80px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first .list_1 .item {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  margin-bottom: 5px;
+  margin-bottom: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  cursor: pointer;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first .list_1 #lst_1:checked ~ label .item_1 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first .list_1 #lst_2:checked ~ label .item_2 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first .list_1 #lst_3:checked ~ label .item_3 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first .list_1 #lst_4:checked ~ label .item_4 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first .list_1 #lst_5:checked ~ label .item_5 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first .list_1 #lst_6:checked ~ label .item_6 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first .list_1 #lst_7:checked ~ label .item_7 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first #fr:checked ~ .list_1 .item {
+  width: 100%;
+  height: 32px;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first #fr:checked ~ .list_1 .item:hover {
+  margin-left: 30px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__first #fr:checked ~ .LeftSide__button {
+  opacity: 0.7;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  padding: 20px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__img {
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__img:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide #pointer:checked ~ .LeftSide__img {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+          box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide #pointer:checked ~ .LeftSide__first .list_1 {
+  left: 300px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide #pointer:checked ~ .LeftSide__second .list_2 {
+  right: 300px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second {
+  position: relative;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second .list_2 {
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s;
+  position: absolute;
+  width: 100%;
+  min-height: 0;
+  bottom: 80px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second .list_2 .item {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  margin-bottom: 5px;
+  margin-bottom: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  cursor: pointer;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second .list_2 #lst_11:checked ~ label .item_11 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second .list_2 #lst_22:checked ~ label .item_22 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second .list_2 #lst_33:checked ~ label .item_33 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second .list_2 #lst_44:checked ~ label .item_44 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second .list_2 #lst_55:checked ~ label .item_55 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second .list_2 #lst_66:checked ~ label .item_66 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second .list_2 #lst_77:checked ~ label .item_77 {
+  margin-left: 30px;
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second #wh:checked ~ .list_2 .item {
+  width: 100%;
+  height: 32px;
+  margin: 0 0 10px 0;
+  padding: 5px;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second #wh:checked ~ .list_2 .item:hover {
+  margin-left: 30px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__second #wh:checked ~ .LeftSide__button {
+  opacity: 0.7;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  padding: 20px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third {
+  position: relative;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block {
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  font-size: 5px;
+  position: absolute;
+  bottom: 80px;
+  left: 50px;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main {
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+  font-size: 1px;
+  padding: 0 6px 0 6px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main label {
+  cursor: pointer;
+  -webkit-transition: text-shadow .4s;
+  transition: text-shadow .4s;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-1:checked ~ .days-1 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-2:checked ~ .days-2 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-3:checked ~ .days-3 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-4:checked ~ .days-4 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-5:checked ~ .days-5 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-6:checked ~ .days-6 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-7:checked ~ .days-7 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-8:checked ~ .days-8 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-9:checked ~ .days-9 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-10:checked ~ .days-10 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-11:checked ~ .days-11 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-12:checked ~ .days-12 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-13:checked ~ .days-13 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-14:checked ~ .days-14 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-15:checked ~ .days-15 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-16:checked ~ .days-16 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-17:checked ~ .days-17 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-18:checked ~ .days-18 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-19:checked ~ .days-19 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-20:checked ~ .days-20 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-21:checked ~ .days-21 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-22:checked ~ .days-22 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-23:checked ~ .days-23 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-24:checked ~ .days-24 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-25:checked ~ .days-25 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-26:checked ~ .days-26 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-27:checked ~ .days-27 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-28:checked ~ .days-28 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-29:checked ~ .days-29 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-30:checked ~ .days-30 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .days-block__main #days-31:checked ~ .days-31 {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block #my-month:checked ~ .go-months {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block #my-month:checked ~ .months-block label .item {
+  width: 60%;
+  height: 25px;
+  margin: 0 0 5px 0;
+  padding: 5px;
+  font-size: 16px;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block #my-month:checked ~ .months-block label .item:hover {
+  margin-left: 30px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third .days-block .go-months {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third #dat:checked ~ .days-block {
+  width: 100%;
+  height: 250px;
+  font-size: 20px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third #dat:checked ~ .days-block .days-block__main {
+  font-size: 25px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third #dat:checked ~ .days-block .months-block {
+  position: absolute;
+  bottom: 5px;
+  left: 250px;
+  width: 100%;
+  min-height: 0;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third #dat:checked ~ .days-block .months-block .item {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
+  margin-bottom: 5px;
+  margin-bottom: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  cursor: pointer;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__third #dat:checked ~ .LeftSide__button {
+  opacity: 0.7;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  padding: 20px;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__FindTicket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 4px 0px #000000 inset;
+          box-shadow: 0px 0px 4px 0px #000000 inset;
+  width: 260px;
+  height: 50px;
+  border-radius: 15px;
+  background: #FFFFFF;
+  color: black;
+  font-weight: 500;
+  font-size: 24px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  opacity: 1;
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__FindTicket:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__FindTicket:active {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  opacity: 0;
+}
+
+@media (max-width: 1260px) {
+  .main .MenuTicket {
+    height: 700px;
+  }
+  .main .MenuTicket .MenuTicket__menu {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1160px) {
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu {
+    max-width: 900px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide {
+    width: 700px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__button {
+    width: 180px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__FindTicket {
+    width: 160px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .main .MenuTicket {
+    height: 600px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__caption {
+    font-size: 35px;
+    padding-top: 120px;
+    -webkit-text-stroke: 0.5px #9D1619;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 550px;
+    height: 200px;
+    margin-top: 24%;
+    background: rgba(193, 21, 16, 0.7);
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 500px;
+    height: 120px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .wherefrom {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .where {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .date {
+    width: 300px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__FindTicket {
+    width: 300px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .MenuTicket .MenuTicket__container .MenuTicket__caption {
+    font-size: 30px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu {
+    margin-top: 30%;
+    width: 425px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide {
+    max-width: 400px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .wherefrom {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .where {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .date {
+    width: 250px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__FindTicket {
+    width: 250px;
+    max-height: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main .MenuTicket {
+    height: 500px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__caption {
+    font-size: 18px;
+    padding-top: 140px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu {
+    margin-top: 20px;
+    height: 300px;
+    max-width: 300px;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide {
+    width: 100%;
+    height: 200px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__img {
+    display: none;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 16px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__button img {
+    padding-left: 30px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .wherefrom img {
+    padding-left: 19px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__FindTicket {
+    width: 300px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width: 460px) {
+  .main .MenuTicket {
+    height: 400px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__caption {
+    padding-top: 90px;
+    font-size: 12px;
+    -webkit-text-stroke: 0.3px #9D1619;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu {
+    width: 240px;
+    height: 270px;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide {
+    width: 100%;
+    height: 180px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__button {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__button img {
+    padding-left: 30px;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu .menu__LeftSide .LeftSide__img {
+    display: none;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu a {
+    display: block;
+    width: 100%;
+  }
+  .main .MenuTicket .MenuTicket__container .MenuTicket__menu a .menu__FindTicket {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=test_list.css.map */

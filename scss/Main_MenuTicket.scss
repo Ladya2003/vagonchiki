@@ -1,0 +1,350 @@
+// .Main .MenuTicket, работа с секцией покупки билетов*****
+
+@mixin Template-Flex($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.main {
+
+    .MenuTicket {
+        width: 100%;
+        height: 760px;
+        margin: 0 auto;
+        background: url("../img/фото/Поезд\ на\ заднем\ фоне.png") 25% 50%/cover no-repeat;
+
+
+        .MenuTicket__container {
+            max-width: 1200px; //именно max, для маштабирования секции-MenuTicket!!!
+            height: 100%;
+            margin: 0 auto;
+
+            .MenuTicket__caption {
+                display: flex;
+                justify-content: center;
+
+                padding-top: 120px;
+
+                font-family: Roboto;
+                font-size: 48px;
+                font-weight: 500;
+                color: white;
+                -webkit-text-stroke: 1px #9D1619;
+            }
+
+            .MenuTicket__menu {
+                @include Template-Flex(space-around, center);
+
+                margin-top: 32%;
+
+                height: 90px;
+                border-radius: 38px;
+                background: rgba(193, 21, 16, 0.92);
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                .menu__LeftSide {
+                    @include Template-Flex(space-evenly, center);
+
+                    width: 800px;
+
+                    .LeftSide__button {
+                        @include Template-Flex(space-around, center);
+
+                        width: 220px;
+                        height: 40px;
+                        border-radius: 15px;
+                        background: #FFFFFF;
+
+                        font-family: 'Roboto';
+                        font-size: 19px;
+                        font-weight: 500;
+
+                    }
+                }
+
+                .menu__FindTicket {
+                    @include Template-Flex(center, center);
+
+                    width: 260px;
+                    height: 50px;
+                    border-radius: 15px;
+                    background: #FFFFFF;
+                    color: black;
+
+                    font-weight: 500;
+                    font-size: 24px;
+                    transition-duration: 0.5s;
+                    opacity: 1;
+                }
+
+                .menu__FindTicket:hover {
+                    transform: scale(0.9);
+                }
+
+                .menu__FindTicket:active {
+                    transform: scale(3);
+                    transition-duration: 0.1s;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1260px) {
+    .main {
+        .MenuTicket {
+            height: 700px;
+
+            .MenuTicket__menu {
+                width: 1100px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1160px) {
+
+    .main {
+        .MenuTicket {
+            .MenuTicket__container {
+                .MenuTicket__menu {
+                    max-width: 900px;
+
+                    .menu__LeftSide {
+                        width: 700px;
+
+                        .LeftSide__button {
+                            width: 180px;
+                        }
+                    }
+
+                    .menu__FindTicket {
+                        width: 160px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 960px) {
+    .main {
+        .MenuTicket {
+            height: 600px;
+
+            .MenuTicket__container {
+                .MenuTicket__caption {
+                    font-size: 35px;
+                    padding-top: 120px;
+                    -webkit-text-stroke: 0.5px #9D1619;
+                }
+
+                .MenuTicket__menu {
+                    flex-direction: column;
+
+                    width: 550px;
+                    height: 200px;
+                    margin-top: 24%;
+
+                    background: rgba(193, 21, 16, 0.7);
+
+                    .menu__LeftSide {
+                        flex-wrap: wrap;
+                        width: 500px;
+                        height: 120px;
+
+                        .wherefrom {
+                            flex: 0 1 40%
+                        }
+
+                        .where {
+                            flex: 0 1 40%
+                        }
+
+                        .date {
+                            width: 300px;
+                        }
+                    }
+
+                    .menu__FindTicket {
+                        width: 300px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main {
+        .MenuTicket {
+            .MenuTicket__container {
+                .MenuTicket__caption {
+                    font-size: 30px;
+                }
+
+                .MenuTicket__menu {
+                    margin-top: 30%;
+                    width: 425px;
+
+                    .menu__LeftSide {
+
+                        max-width: 400px;
+
+                        .wherefrom {
+                            flex: 0 1 40%
+                        }
+
+                        .where {
+                            flex: 0 1 40%
+                        }
+
+                        .date {
+                            width: 250px;
+                        }
+                    }
+
+                    .menu__FindTicket {
+                        width: 250px;
+                        max-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:640px) {
+    .main {
+        .MenuTicket {
+            height: 500px;
+
+            .MenuTicket__container {
+
+                .MenuTicket__caption {
+                    font-size: 18px;
+                    padding-top: 140px;
+                }
+
+                .MenuTicket__menu {
+                    margin-top: 20px;
+                    height: 300px;
+                    max-width: 300px;
+
+                    background: none;
+                    box-shadow: none;
+
+                    .menu__LeftSide {
+                        width: 100%;
+                        height: 200px;
+
+                        .LeftSide__button {
+                            flex: 0 1 100%;
+                            background: rgba(255, 255, 255, 0.8);
+                            justify-content: center;
+
+                            img {
+                                padding-left: 30px;
+                            }
+
+                            font-size:16px;
+                        }
+
+                        .wherefrom {
+                            img {
+                                padding-left: 19px;
+                            }
+                        }
+
+                        .LeftSide__img {
+                            display: none;
+                        }
+                    }
+
+                    .menu__FindTicket {
+                        width: 300px;
+                        font-size: 18px;
+                        background: rgba(255, 255, 255, 0.8);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:460px) {
+
+    .main {
+        .MenuTicket {
+            height: 400px;
+
+            .MenuTicket__container {
+                .MenuTicket__caption {
+                    padding-top: 90px;
+                    font-size: 12px;
+                    -webkit-text-stroke: 0.3px #9D1619;
+                }
+
+                .MenuTicket__menu {
+                    width: 240px;
+                    height: 270px;
+
+                    background: none;
+                    box-shadow: none;
+
+                    .menu__LeftSide {
+                        width: 100%;
+                        height: 180px;
+
+                        .LeftSide__button {
+                            flex: 0 1 100%;
+                            justify-content: center;
+
+                            height: 30px;
+
+                            background: rgba(255, 255, 255, 0.8);
+
+                            img {
+                                padding-left: 30px;
+                            }
+
+                            font-size:13px;
+                        }
+
+                        .LeftSide__img {
+                            display: none;
+                        }
+
+                    }
+
+                    a {
+                        display: block;
+                        width: 100%;
+
+                        .menu__FindTicket {
+                            width: 100%;
+                            height: 50px;
+                            font-size: 16px;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+}
+
+// .Main .MenuTicket, работа с секцией покупки билетов*****
