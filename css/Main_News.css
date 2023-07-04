@@ -1,0 +1,227 @@
+@charset "UTF-8";
+.main .news {
+  padding-top: 60px;
+  background: #C4C4C4;
+}
+
+.main .news .news__container {
+  min-height: 700px;
+}
+
+.main .news .news__container .news__caption {
+  margin: 0 auto;
+  max-width: 400px;
+  height: 100px;
+  border-bottom: solid black 3px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.main .news .news__container .news__contant {
+  margin: 60px auto;
+  display: -ms-grid;
+  display: grid;
+  max-width: 1200px;
+  height: 400px;
+  -ms-grid-columns: 500px 500px;
+      grid-template-columns: 500px 500px;
+  -ms-grid-rows: 170px 170px;
+      grid-template-rows: 170px 170px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.main .news .news__container .news__contant .news__new {
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main .news .news__container .news__contant .news__new .new__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 8px;
+}
+
+.main .news .news__container .news__contant .news__new .news__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 275px;
+  height: 105px;
+}
+
+.main .news .news__container .news__contant .news__new .news__img {
+  margin-left: 2px;
+  width: 220px;
+  height: 105px;
+  border-radius: 5px;
+}
+
+.main .news .news__container .news__contant .news__new .new-1-1__img {
+  background: url(../img/фото/инф_1_1.png) 50% 50%/cover no-repeat;
+}
+
+.main .news .news__container .news__contant .news__new .new-1-2__img {
+  background: url(../img/фото/инф_1_2.png) 60% 40%/cover no-repeat;
+}
+
+.main .news .news__container .news__contant .news__new .new-2-1__img {
+  background: url(../img/фото/инф_2_1.png) 50% 50%/cover no-repeat;
+}
+
+.main .news .news__container .news__contant .news__new .new-2-2__img {
+  background: url(../img/фото/инф_2_2.png) 100% 50%/cover no-repeat;
+}
+
+.main .news .news__container .news__contant .news__new .news__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  background-color: #68705D;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.main .news .news__container .news__contant .news__new .news__button:hover {
+  background-color: rgba(193, 21, 16, 0.92);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.main .news .news__container .news__contant .news__new .news__button:active {
+  opacity: 0.6;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+@media (max-width: 1260px) {
+  .main .news .news__container .news__contant {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .main .news .news__container .news__contant {
+    max-width: 900px;
+    -ms-grid-columns: 400px 400px;
+        grid-template-columns: 400px 400px;
+    -ms-grid-rows: 170px 170px;
+        grid-template-rows: 170px 170px;
+  }
+}
+
+@media (max-width: 960px) {
+  .main .news .news__container .news__contant {
+    max-width: 700px;
+    grid-column-gap: 80px;
+    -ms-grid-columns: 300px 300px;
+        grid-template-columns: 300px 300px;
+    -ms-grid-rows: 160px 160px;
+        grid-template-rows: 160px 160px;
+  }
+  .main .news .news__container .news__contant .news__new .news__text {
+    font-size: 18px;
+  }
+  .main .news .news__container .news__contant .news__new .news__button {
+    width: 250px;
+    height: 32px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main .news .news__container .news__caption {
+    font-size: 24px;
+    max-width: 200px;
+    height: 70px;
+  }
+  .main .news .news__container .news__contant {
+    margin: 30px auto;
+    max-width: 600px;
+    height: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .news .news__container .news__contant .news__new {
+    height: 150px;
+    width: 80%;
+  }
+  .main .news .news__container .news__contant .news__new .news__text {
+    width: 240px;
+    height: 90px;
+  }
+  .main .news .news__container .news__contant .news__new .news__img {
+    width: 73.33333%;
+    height: 90px;
+  }
+  .main .news .news__container .news__contant .news__new .news__button {
+    width: 71.09005%;
+    height: 38px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .main .news .news__container .news__contant .news__new .news__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 460px) {
+  .main .news .news__container .news__caption {
+    font-size: 18px;
+    height: 60px;
+  }
+  .main .news .news__container .news__contant .news__new .news__text {
+    font-size: 14px;
+  }
+}
