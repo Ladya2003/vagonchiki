@@ -1,0 +1,1392 @@
+// .Main .MenuTicket, работа с секцией покупки билетов*****
+
+@mixin Template-Flex($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+.main {
+
+    .MenuTicket {
+        width: 100%;
+        height: 760px;
+        margin: 0 auto;
+        background: url("../img/фото/Поезд\ на\ заднем\ фоне.png") 25% 50%/cover no-repeat;
+
+
+        .MenuTicket__container {
+            max-width: 1200px; //именно max, для маштабирования секции-MenuTicket!!!
+            height: 100%;
+            margin: 0 auto;
+
+            .MenuTicket__caption {
+                display: flex;
+                justify-content: center;
+
+                padding-top: 120px;
+
+                font-family: Roboto;
+                font-size: 48px;
+                font-weight: 500;
+                color: white;
+                -webkit-text-stroke: 1px #9D1619;
+            }
+
+            .MenuTicket__menu {
+                @include Template-Flex(space-around, center);
+
+                margin-top: 32%;
+
+                height: 90px;
+                border-radius: 38px;
+                background: rgba(193, 21, 16, 0.92);
+                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                .menu__LeftSide {
+                    @include Template-Flex(space-evenly, center);
+
+                    width: 800px;
+
+                    input {
+                        display: none;
+                    }
+
+                    .LeftSide__button {
+                        @include Template-Flex(space-around, center);
+
+                        width: 220px;
+                        height: 40px;
+                        border-radius: 15px;
+                        background: #FFFFFF;
+
+                        font-family: 'Roboto';
+                        font-size: 19px;
+                        font-weight: 500;
+
+                        box-shadow: 0px 0px 4px 0px #000000 inset;
+
+                        cursor: pointer;
+
+                        transition: .8s;
+
+                        &:hover {
+                            padding: 20px;
+                        }
+
+                    }
+
+                    .LeftSide__first {
+                        position: relative;
+
+                        .list_1 {
+                            transition: margin-left 1s;
+                            position: absolute;
+                            width: 100%;
+
+                            min-height: 0;
+                            bottom: 80px;
+
+                            .item {
+                                background-color: rgba(0, 0, 0, 0.6);
+                                color: rgba(255, 255, 255, 0.8);
+                                border-radius: 3px;
+                                margin-bottom: 5px;
+
+                                margin-bottom: 0;
+
+                                width: 0;
+                                height: 0;
+                                padding: 0;
+                                overflow: hidden;
+
+                                transition-duration: 1.5s;
+
+                                cursor: pointer;
+
+                            }
+
+                            #lst_1:checked~ {
+                                label {
+                                    .item_1 {
+                                        margin-left: 30px;
+
+
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_2:checked~ {
+                                label {
+                                    .item_2 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_3:checked~ {
+                                label {
+                                    .item_3 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_4:checked~ {
+                                label {
+                                    .item_4 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_5:checked~ {
+                                label {
+                                    .item_5 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_6:checked~ {
+                                label {
+                                    .item_6 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_7:checked~ {
+                                label {
+                                    .item_7 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+                        }
+
+                        #fr:checked~ {
+
+                            .list_1 {
+                                .item {
+                                    width: 100%;
+                                    height: 32px;
+                                    margin: 0 0 10px 0;
+                                    padding: 5px;
+
+                                    transition-duration: 0.8s;
+
+                                    &:hover {
+                                        margin-left: 30px;
+                                    }
+                                }
+
+                            }
+
+                            .LeftSide__button {
+                                opacity: 0.7;
+                                transform: scale(0.9);
+                                padding: 20px;
+                            }
+
+                        }
+                    }
+
+                    .LeftSide__img {
+                        transition-duration: .6s;
+
+                        &:hover {
+                            cursor: pointer;
+                            transform: rotate(-180deg);
+                        }
+                    }
+
+                    #pointer:checked~ {
+
+
+                        .LeftSide__img {
+                            transform: rotate(-180deg);
+                            box-shadow:
+                                0 0 7px #fff,
+                                0 0 10px #fff,
+                                0 0 21px #fff,
+                                0 0 42px #0fa,
+                                0 0 82px #0fa,
+                                0 0 92px #0fa,
+                                0 0 102px #0fa,
+                                0 0 151px #0fa;
+                            background-color: #fff;
+                            border-radius: 10px;
+                        }
+
+                        .LeftSide__first {
+                            .list_1 {
+                                left: 300px;
+                            }
+                        }
+
+                        .LeftSide__second {
+                            .list_2 {
+                                right: 300px;
+                            }
+                        }
+                    }
+
+                    .LeftSide__second {
+                        position: relative;
+
+                        .list_2 {
+                            transition: margin-right 1s;
+                            position: absolute;
+                            width: 100%;
+
+                            min-height: 0;
+                            bottom: 80px;
+
+                            .item {
+                                background-color: rgba(0, 0, 0, 0.6);
+                                color: rgba(255, 255, 255, 0.8);
+                                border-radius: 3px;
+                                margin-bottom: 5px;
+
+                                margin-bottom: 0;
+
+                                width: 0;
+                                height: 0;
+                                padding: 0;
+                                overflow: hidden;
+
+                                transition-duration: 1.5s;
+
+                                cursor: pointer;
+
+                            }
+
+                            #lst_11:checked~ {
+                                label {
+                                    .item_11 {
+                                        // position: relative;
+
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_22:checked~ {
+                                label {
+                                    .item_22 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_33:checked~ {
+                                label {
+                                    .item_33 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_44:checked~ {
+                                label {
+                                    .item_44 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_55:checked~ {
+                                label {
+                                    .item_55 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_66:checked~ {
+                                label {
+                                    .item_66 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+                            #lst_77:checked~ {
+                                label {
+                                    .item_77 {
+                                        margin-left: 30px;
+                                        color: #fff;
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+                            }
+
+
+
+                        }
+
+                        #wh:checked~ {
+
+                            .list_2 {
+                                .item {
+                                    width: 100%;
+                                    height: 32px;
+                                    margin: 0 0 10px 0;
+                                    padding: 5px;
+
+                                    transition-duration: 0.8s;
+
+                                    &:hover {
+                                        margin-left: 30px;
+                                    }
+                                }
+
+                            }
+
+                            .LeftSide__button {
+                                opacity: 0.7;
+                                transform: scale(0.9);
+                                padding: 20px;
+                            }
+
+                        }
+                    }
+
+                    //рабочая!!!
+                    .LeftSide__third {
+                        position: relative;
+
+                        .days-block {
+                            transition-duration: 1.5s;
+
+                            font-size: 5px;
+
+                            position: absolute;
+                            bottom: 80px;
+                            left: 50px;
+                            width: 0;
+
+                            // overflow: hidden;
+
+                            height: 0;
+                            background-color: rgba(0, 0, 0, 0.6);
+                            color: rgba(255, 255, 255, 0.8);
+
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            border-radius: 15px;
+
+                            .days-block__main {
+                                transition-duration: 1.5s;
+
+                                font-size: 1px;
+                                padding: 0 6px 0 6px;
+
+
+
+                                label {
+                                    cursor: pointer;
+                                    transition: text-shadow .4s;
+                                }
+
+                                #days-1:checked~ {
+                                    .days-1 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+
+                                #days-2:checked~ {
+                                    .days-2 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+                                }
+
+                                #days-3:checked~ {
+                                    .days-3 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-4:checked~ {
+                                    .days-4 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-5:checked~ {
+                                    .days-5 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-6:checked~ {
+                                    .days-6 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-7:checked~ {
+                                    .days-7 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-8:checked~ {
+                                    .days-8 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-9:checked~ {
+                                    .days-9 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-10:checked~ {
+                                    .days-10 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-11:checked~ {
+                                    .days-11 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-12:checked~ {
+                                    .days-12 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-13:checked~ {
+                                    .days-13 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-14:checked~ {
+                                    .days-14 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-15:checked~ {
+                                    .days-15 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-16:checked~ {
+                                    .days-16 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-17:checked~ {
+                                    .days-17 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-18:checked~ {
+                                    .days-18 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-19:checked~ {
+                                    .days-19 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-20:checked~ {
+                                    .days-20 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-21:checked~ {
+                                    .days-21 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-22:checked~ {
+                                    .days-22 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-23:checked~ {
+                                    .days-23 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-24:checked~ {
+                                    .days-24 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-25:checked~ {
+                                    .days-25 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-26:checked~ {
+                                    .days-26 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-27:checked~ {
+                                    .days-27 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-28:checked~ {
+                                    .days-28 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-29:checked~ {
+                                    .days-29 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-30:checked~ {
+                                    .days-30 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+
+                                #days-31:checked~ {
+                                    .days-31 {
+                                        text-shadow:
+                                            0 0 7px #fff,
+                                            0 0 10px #fff,
+                                            0 0 21px #fff,
+                                            0 0 42px #0fa,
+                                            0 0 82px #0fa,
+                                            0 0 92px #0fa,
+                                            0 0 102px #0fa,
+                                            0 0 151px #0fa;
+                                    }
+
+                                }
+                            }
+
+                            #my-month:checked~ {
+                                // overflow: visible;
+
+                                .go-months {
+                                    text-shadow:
+                                        0 0 7px #fff,
+                                        0 0 10px #fff,
+                                        0 0 21px #fff,
+                                        0 0 42px #0fa,
+                                        0 0 82px #0fa,
+                                        0 0 92px #0fa,
+                                        0 0 102px #0fa,
+                                        0 0 151px #0fa;
+                                }
+
+                                .months-block {
+
+                                    label {
+                                        .item {
+                                            width: 60%;
+                                            height: 25px;
+                                            margin: 0 0 5px 0;
+                                            padding: 5px;
+                                            font-size: 16px;
+
+                                            transition-duration: 0.8s;
+
+                                            &:hover {
+                                                margin-left: 30px;
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                            }
+
+                            .go-months {
+                                transition-duration: 0.3s;
+                                cursor: pointer;
+                            }
+
+                        }
+
+
+                        #dat:checked~ {
+                           
+
+                            .days-block {
+
+                                width: 100%;
+                                height: 250px;
+
+                                font-size: 20px;
+
+                                .days-block__main {
+                                    font-size: 25px;
+                                }
+
+
+                                .months-block {
+                                    position: absolute;
+                                    bottom: 5px;
+
+                                    left: 250px;
+
+                                    width: 100%;
+                                    min-height: 0;
+
+                                    .item {
+                                        background-color: rgba(0, 0, 0, 0.6);
+                                        color: rgba(255, 255, 255, 0.8);
+                                        border-radius: 3px;
+                                        margin-bottom: 5px;
+
+                                        margin-bottom: 0;
+
+                                        width: 0;
+                                        height: 0;
+                                        padding: 0;
+                                        overflow: hidden;
+
+                                        transition-duration: 1s;
+
+                                        cursor: pointer;
+
+                                    }
+                                }
+
+
+
+                            }
+
+                            .LeftSide__button {
+                                opacity: 0.7;
+                                transform: scale(0.9);
+                                padding: 20px;
+                            }
+
+                        }
+
+
+
+                        //рабочая!!!
+                    }
+                }
+
+                .menu__FindTicket {
+                    @include Template-Flex(center, center);
+
+                    box-shadow: 0px 0px 4px 0px #000000 inset;
+                    width: 260px;
+                    height: 50px;
+                    border-radius: 15px;
+                    background: #FFFFFF;
+                    color: black;
+
+                    font-weight: 500;
+                    font-size: 24px;
+                    transition-duration: 0.5s;
+                    opacity: 1;
+                }
+
+                .menu__FindTicket:hover {
+                    transform: scale(0.9);
+                }
+
+                .menu__FindTicket:active {
+                    transform: scale(3);
+                    transition-duration: 0.1s;
+                    opacity: 0;
+                }
+
+
+            }
+        }
+    }
+}
+
+@media (max-width: 1260px) {
+    .main {
+        .MenuTicket {
+            height: 700px;
+
+            .MenuTicket__menu {
+                width: 1100px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1160px) {
+
+    .main {
+        .MenuTicket {
+            .MenuTicket__container {
+                .MenuTicket__menu {
+                    max-width: 900px;
+
+                    .menu__LeftSide {
+                        width: 700px;
+
+                        .LeftSide__button {
+                            width: 180px;
+                        }
+                    }
+
+                    .menu__FindTicket {
+                        width: 160px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 960px) {
+    .main {
+        .MenuTicket {
+            height: 600px;
+
+            .MenuTicket__container {
+                .MenuTicket__caption {
+                    font-size: 35px;
+                    padding-top: 120px;
+                    -webkit-text-stroke: 0.5px #9D1619;
+                }
+
+                .MenuTicket__menu {
+                    flex-direction: column;
+
+                    width: 550px;
+                    height: 200px;
+                    margin-top: 24%;
+
+                    background: rgba(193, 21, 16, 0.7);
+
+                    .menu__LeftSide {
+                        flex-wrap: wrap;
+                        width: 500px;
+                        height: 120px;
+
+                        .wherefrom {
+                            flex: 0 1 40%
+                        }
+
+                        .where {
+                            flex: 0 1 40%
+                        }
+
+                        .date {
+                            width: 300px;
+                        }
+                    }
+
+                    .menu__FindTicket {
+                        width: 300px;
+                        height: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main {
+        .MenuTicket {
+            .MenuTicket__container {
+                .MenuTicket__caption {
+                    font-size: 30px;
+                }
+
+                .MenuTicket__menu {
+                    margin-top: 30%;
+                    width: 425px;
+
+                    .menu__LeftSide {
+
+                        max-width: 400px;
+
+                        .wherefrom {
+                            flex: 0 1 40%
+                        }
+
+                        .where {
+                            flex: 0 1 40%
+                        }
+
+                        .date {
+                            width: 250px;
+                        }
+                    }
+
+                    .menu__FindTicket {
+                        width: 250px;
+                        max-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:640px) {
+    .main {
+        .MenuTicket {
+            height: 500px;
+
+            .MenuTicket__container {
+
+                .MenuTicket__caption {
+                    font-size: 18px;
+                    padding-top: 140px;
+                }
+
+                .MenuTicket__menu {
+                    margin-top: 20px;
+                    height: 300px;
+                    max-width: 300px;
+
+                    background: none;
+                    box-shadow: none;
+
+                    .menu__LeftSide {
+                        width: 100%;
+                        height: 200px;
+
+                        .LeftSide__img {
+                            display: none;
+                        }
+
+                        .LeftSide__button {
+                            flex: 0 1 100%;
+                            background: rgba(255, 255, 255, 0.8);
+                            justify-content: center;
+
+                            img {
+                                padding-left: 30px;
+                            }
+
+                            font-size:16px;
+                        }
+
+                        .wherefrom {
+                            img {
+                                padding-left: 19px;
+                            }
+                        }
+
+
+                    }
+
+                    .menu__FindTicket {
+                        width: 300px;
+                        font-size: 18px;
+                        background: rgba(255, 255, 255, 0.8);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:460px) {
+
+    .main {
+        .MenuTicket {
+            height: 400px;
+
+            .MenuTicket__container {
+                .MenuTicket__caption {
+                    padding-top: 90px;
+                    font-size: 12px;
+                    -webkit-text-stroke: 0.3px #9D1619;
+                }
+
+                .MenuTicket__menu {
+                    width: 240px;
+                    height: 270px;
+
+                    background: none;
+                    box-shadow: none;
+
+                    .menu__LeftSide {
+                        width: 100%;
+                        height: 180px;
+
+                        .LeftSide__button {
+                            flex: 0 1 100%;
+                            justify-content: center;
+
+                            height: 30px;
+
+                            background: rgba(255, 255, 255, 0.8);
+
+                            img {
+                                padding-left: 30px;
+                            }
+
+                            font-size:13px;
+                        }
+
+                        .LeftSide__img {
+                            display: none;
+                        }
+
+                    }
+
+                    a {
+                        display: block;
+                        width: 100%;
+
+                        .menu__FindTicket {
+                            width: 100%;
+                            height: 50px;
+                            font-size: 16px;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+
+}
+
+// .Main .MenuTicket, работа с секцией покупки билетов*****
